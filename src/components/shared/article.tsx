@@ -5,6 +5,7 @@ export interface ArticleProps {
     id: number;
     title: string;
     shortDescription: string;
+    text: string;
     src: string;
     createdAt: Date;
 }

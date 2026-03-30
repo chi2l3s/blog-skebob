@@ -160,8 +160,8 @@
 
   img.twemoji {
     display: inline-block;
-    width: 36px;
-    height: 36px;
+    width: 24px;
+    height: 24px;
     margin: 0 0.05em 0 0.1em;
     vertical-align: -0.1em;
   }

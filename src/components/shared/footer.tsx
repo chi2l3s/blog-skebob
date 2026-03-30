@@ -3,7 +3,7 @@ import { BsTelegram } from "react-icons/bs";
 
 export function Footer() {
     return (
-        <div className="flex items-center justify-between bg-muted px-8 py-4">
+        <div className="flex items-center justify-between bg-muted px-8 py-4 mt-20">
             <div className="flex flex-col gap-2">
                 <h1>OOO "СКЕБОБ НЮВС"</h1>
                 <p className="text-muted-foreground font-semibold">Email: amixolplex@gmail.com</p>

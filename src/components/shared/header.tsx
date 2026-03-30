@@ -3,7 +3,7 @@ import { ModeToggle } from "./theme-toggle";
 
 export function Header() {
     return (
-        <div className={"sticky flex items-center justify-around min-w-screen my-4"}>
+        <div className={"sticky top-0 z-10 flex items-center justify-around w-full my-4"}>
             <Link to="/">
                 <h1 className={"text-2xl font-bold"}>BlogSkebob</h1>
             </Link>

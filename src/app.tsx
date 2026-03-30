@@ -1,9 +1,10 @@
 import { Route, Routes } from "react-router-dom";
 import { Header } from "./components/shared/header";
 import { ThemeProvider } from "./components/shared/theme-provider";
-import { MainPage } from "./components/pages/main-page";
+import { MainPage } from "./pages/main-page";
 import { Footer } from "./components/shared/footer";
 import { TwemojiProvider } from "./components/shared/twemoji-provider";
+import { ArticlePage } from "./pages/article-page";
 
 export function App() {
   return (
@@ -16,7 +17,7 @@ export function App() {
               <Route path="/" element={<MainPage />} />
               <Route path="/blog" />
               <Route path="/about" />
-              <Route path="/article/:id"/>
+              <Route path="/article/:id" element={<ArticlePage />}/>
             </Routes></div>
           <Footer />
         </div>
