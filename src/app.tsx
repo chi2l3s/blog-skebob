@@ -3,20 +3,24 @@ import { Header } from "./components/shared/header";
 import { ThemeProvider } from "./components/shared/theme-provider";
 import { MainPage } from "./components/pages/main-page";
 import { Footer } from "./components/shared/footer";
+import { TwemojiProvider } from "./components/shared/twemoji-provider";
 
 export function App() {
   return (
-    <ThemeProvider defaultTheme="light" storageKey="vite-ui-theme">
-      <div className="min-h-screen flex flex-col overflow-hidden">
-        <Header />
-        <div className="px-6 md:px-12 lg:px-24 flex-1">
-          <Routes>
-            <Route path="/" element={<MainPage />} />
-            <Route path="/blog" />
-            <Route path="/about" />
-          </Routes></div>
-        <Footer />
-      </div>
-    </ThemeProvider>
+    <TwemojiProvider>
+      <ThemeProvider defaultTheme="light" storageKey="vite-ui-theme">
+        <div className="min-h-screen flex flex-col overflow-hidden">
+          <Header />
+          <div className="px-6 md:px-12 lg:px-24 flex-1">
+            <Routes>
+              <Route path="/" element={<MainPage />} />
+              <Route path="/blog" />
+              <Route path="/about" />
+              <Route path="/article/:id"/>
+            </Routes></div>
+          <Footer />
+        </div>
+      </ThemeProvider>
+    </TwemojiProvider>
   )
 }

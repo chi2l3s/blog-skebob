@@ -1,9 +1,17 @@
+import { ARTICLES } from "../../constants";
+import { Article } from "../shared/article";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "../ui/accordion";
 
 export function MainPage() {
     return (
-        <div>
+        <div id="faq" className="space-y-6">
             <img alt="Скебобчик" src="src\assets\img\skebob.webp" width={200} />
+
+            <h1 className="font-black text-4xl">Последние новости</h1>
+
+            {ARTICLES.map(article => (
+                <Article {...article}/>
+            ))}
 
             <div className="flex flex-col space-y-5 items-center justify-center">
                 <h1 className="font-black text-4xl">Частые вопросы</h1>
