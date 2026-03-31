@@ -8,9 +8,8 @@ export function Header() {
                 <h1 className={"text-2xl font-bold"}>BlogSkebob</h1>
             </Link>
 
-            <div className={"flex items-center justify-center gap-3"}>
+            <div className={"flex items-center justify-center gap-7"}>
                 <Link to="/blog">Блог / Статьи</Link>
-                <Link to="/categories">Категории</Link>
                 <Link to="/about">Обо мне</Link>
             </div>
 

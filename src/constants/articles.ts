@@ -1,5 +1,9 @@
 import type { ArticleProps } from "../components/shared/article";
 
+export function getRandomDate() {
+    return new Date(new Date().getTime() + Math.random() * (new Date(2023, 0, 1).getTime() - new Date().getTime()));
+}
+
 export const ARTICLES: ArticleProps[] = [
     {
         id: 1,
@@ -7,7 +11,7 @@ export const ARTICLES: ArticleProps[] = [
         shortDescription: "🇪🇺 NAVI попытались откамбечить с 1-7 на Дасте, но в итоге отлетели 3-0 по картам... Кто-то удивлён? 🙂",
         src: "/articles/1.jpg",
         text: "Фантастический гранд-финал в Роттердаме завершился триумфом пчел! 🐝 Team Vitality в очередной раз доказали, что являются доминирующей силой на мировой сцене. Несмотря на отчаянные попытки NAVI перевернуть игру на Dust 2, где они сократили отставание с 1-7, Vitality сохранили хладнокровие и закрыли серию со счетом 3-0. ZywOo снова показал инопланетный уровень игры, а apEX в послематчевом интервью заявил: „Пока мы работаем так, как сейчас, нас не остановить“. Для NAVI это очередное серебро, которое оставляет много вопросов к защите на ключевых картах",
-        createdAt: new Date()
+        createdAt: getRandomDate()
     },
     {
         id: 2,
@@ -15,7 +19,7 @@ export const ARTICLES: ArticleProps[] = [
         shortDescription: "Эстонский гений показал невероятный перформанс, став лучшим игроком турнира по версии HLTV 📈",
         src: "/articles/2.jpg",
         text: "Несмотря на командный успех Vitality, индивидуально Робин 'ropz' Коль был вне конкуренции на протяжении всего ивента.",
-        createdAt: new Date()
+        createdAt: getRandomDate()
     },
     {
         id: 3,
@@ -23,7 +27,7 @@ export const ARTICLES: ArticleProps[] = [
         shortDescription: "Valve официально разрешили поднять призовой до $1.6 млн. Такого CS еще не видел! 💰",
         src: "/articles/3.jpg",
         text: "Турнир в Казахстане обещает стать самым масштабным событием весны с беспрецедентными выплатами для команд.",
-        createdAt: new Date()
+        createdAt: getRandomDate()
     },
     {
         id: 4,
@@ -31,7 +35,7 @@ export const ARTICLES: ArticleProps[] = [
         shortDescription: "Valve выпустили патч с изменениями маппула и новыми коллекциями скинов 🏺",
         src: "/articles/4.jpg",
         text: "Карта Anubis получила серьезные структурные правки, а в игру добавили четвертый сезон режима Premier.",
-        createdAt: new Date()
+        createdAt: getRandomDate()
     },
     {
         id: 5,
@@ -39,7 +43,7 @@ export const ARTICLES: ArticleProps[] = [
         shortDescription: "Две победы подряд! После IEM Krakow 2026 «пчелы» забирают и Роттердам 🇵🇱",
         src: "/articles/5.jpg",
         text: "Команда находится в невероятной форме, не проигрывая в финалах уже несколько месяцев.",
-        createdAt: new Date()
+        createdAt: getRandomDate()
     },
     {
         id: 6,
@@ -47,7 +51,7 @@ export const ARTICLES: ArticleProps[] = [
         shortDescription: "Новая механика контрактов обмена обвалила цены на редкие ножи и перчатки 📉",
         src: "/articles/6.jpg",
         text: "Инвесторы в панике: стоимость топовых предметов упала почти на 70% после последнего патча.",
-        createdAt: new Date()
+        createdAt: getRandomDate()
     },
     {
         id: 7,
@@ -55,7 +59,7 @@ export const ARTICLES: ArticleProps[] = [
         shortDescription: "Главный турнир года пройдет в Сингапуре с 25 ноября по 13 декабря 🇸🇬",
         src: "/articles/7.jpg",
         text: "Азия готовится принять свой первый мейджор в истории Counter-Strike 2.",
-        createdAt: new Date()
+        createdAt: getRandomDate()
     },
     {
         id: 8,
@@ -63,7 +67,7 @@ export const ARTICLES: ArticleProps[] = [
         shortDescription: "Андердоги из СНГ обыграли Falcons в финале первого турнира 2026 года! 🦅",
         src: "/articles/8.jpg",
         text: "Победа со счетом 3:0 над звездным составом Falcons шокировала аналитиков.",
-        createdAt: new Date()
+        createdAt: getRandomDate()
     },
     {
         id: 9,
@@ -71,7 +75,7 @@ export const ARTICLES: ArticleProps[] = [
         shortDescription: "Valve добавили оригинальную страницу легендарной игры в магазин 🕹️",
         src: "/articles/9.jpg",
         text: "Игра доступна как отдельный продукт, но официальные серверы по-прежнему закрыты.",
-        createdAt: new Date()
+        createdAt: getRandomDate()
     },
     {
         id: 10,
@@ -79,7 +83,7 @@ export const ARTICLES: ArticleProps[] = [
         shortDescription: "Интерес к CS2 растет: финал Vitality vs NAVI собрал внушительную аудиторию 📺",
         src: "/articles/10.jpg",
         text: "Пиковый онлайн показал, что противостояние этих тегов остается самым востребованным у фанатов.",
-        createdAt: new Date()
+        createdAt: getRandomDate()
     },
     {
         id: 11,
@@ -87,7 +91,7 @@ export const ARTICLES: ArticleProps[] = [
         shortDescription: "Известный инсайдер раскритиковал финал за отсутствие интриги 🗣️",
         src: "/articles/11.jpg",
         text: "По мнению Алексея Бирюкова, разница в классе между командами была слишком велика.",
-        createdAt: new Date()
+        createdAt: getRandomDate()
     },
     {
         id: 12,
@@ -95,7 +99,7 @@ export const ARTICLES: ArticleProps[] = [
         shortDescription: "Расписание команд слишком плотное — организаторы идут на уступки 📅",
         src: "/articles/12.jpg",
         text: "Конфликт дат заставил PGL пересмотреть свой календарь в пользу Саудовской Аравии.",
-        createdAt: new Date()
+        createdAt: getRandomDate()
     },
     {
         id: 13,
@@ -103,7 +107,7 @@ export const ARTICLES: ArticleProps[] = [
         shortDescription: "Легендарный Кельн официально получил статус главного турнира от ESL 🏰",
         src: "/articles/13.jpg",
         text: "Собор CS примет лучший чемпионат в своей истории уже этим летом.",
-        createdAt: new Date()
+        createdAt: getRandomDate()
     },
     {
         id: 14,
@@ -111,7 +115,7 @@ export const ARTICLES: ArticleProps[] = [
         shortDescription: "Датчанин лидирует по количеству призовых за всю историю — более $2.2 млн 💎",
         src: "/articles/14.jpg",
         text: "Даже находясь в статусе свободного агента, Питер сохраняет первую строчку рейтинга.",
-        createdAt: new Date()
+        createdAt: getRandomDate()
     },
     {
         id: 15,
@@ -119,7 +123,7 @@ export const ARTICLES: ArticleProps[] = [
         shortDescription: "Слухи о переходе легенды в новый амбициозный проект подтверждаются инсайдерами 🔥",
         src: "/articles/15.jpg",
         text: "Александр может возглавить европейский микс уже к следующему RMR-циклу.",
-        createdAt: new Date()
+        createdAt: getRandomDate()
     },
     {
         id: 16,
@@ -127,7 +131,7 @@ export const ARTICLES: ArticleProps[] = [
         shortDescription: "Следующая остановка — Форт-Уэрт. Америка ждет топовый CS в апреле 🇺🇸",
         src: "/articles/16.jpg",
         text: "Турнир серии Rivals обещает собрать восьмерку лучших команд мира.",
-        createdAt: new Date()
+        createdAt: getRandomDate()
     },
     {
         id: 17,
@@ -135,7 +139,7 @@ export const ARTICLES: ArticleProps[] = [
         shortDescription: "После крупного обновления количество игроков превысило 1.6 млн одновременно 📈",
         src: "/articles/17.jpg",
         text: "Интерес к игре достиг пика благодаря новому контенту и операциям.",
-        createdAt: new Date()
+        createdAt: getRandomDate()
     },
     {
         id: 18,
@@ -143,7 +147,7 @@ export const ARTICLES: ArticleProps[] = [
         shortDescription: "Молодой талант остается в организации еще на три года. Отступные — рекордные 🐉",
         src: "/articles/18.jpg",
         text: "Spirit строят долгосрочный проект вокруг своей главной звезды.",
-        createdAt: new Date()
+        createdAt: getRandomDate()
     },
     {
         id: 19,
@@ -151,7 +155,7 @@ export const ARTICLES: ArticleProps[] = [
         shortDescription: "Неудачное выступление в Роттердаме вынуждает менеджмент идти на решафлы 🔄",
         src: "/articles/19.jpg",
         text: "Команда рассматривает несколько молодых талантов из академий.",
-        createdAt: new Date()
+        createdAt: getRandomDate()
     },
     {
         id: 20,
@@ -159,7 +163,7 @@ export const ARTICLES: ArticleProps[] = [
         shortDescription: "Швеция возвращается в большую игру — финал лиги пройдет в Ericsson Globe 🇸🇪",
         src: "/articles/20.jpg",
         text: "Арена, принимавшая мейджор 2021 года, снова увидит лучших из лучших.",
-        createdAt: new Date()
+        createdAt: getRandomDate()
     },
     {
         id: 21,
@@ -167,7 +171,7 @@ export const ARTICLES: ArticleProps[] = [
         shortDescription: "Снайпер G2 прокомментировал вылет с турнира и пообещал работу над ошибками 💪",
         src: "/articles/21.jpg",
         text: "Илья взял вину за поражение на себя, несмотря на высокий индивидуальный рейтинг.",
-        createdAt: new Date()
+        createdAt: getRandomDate()
     }
 
 ]

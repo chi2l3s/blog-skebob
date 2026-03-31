@@ -9,10 +9,10 @@ export function MainPage() {
 
             <h1 className="font-black text-4xl">Последние новости</h1>
 
-            <div className="grid grid-cols-4 gap-4">
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4">
                 {ARTICLES.map(article => (
-                <Article {...article}/>
-            ))}
+                    <Article {...article} />
+                ))}
             </div>
 
             <div className="flex flex-col space-y-5 items-center justify-center">
